@@ -19,5 +19,8 @@ class BATTLETANK_API UTankTrack : public UStaticMeshComponent
 public:
 	UFUNCTION(BlueprintCallable, Category = Input)
 		void SetThrottle(float Throttle);
+
+	UPROPERTY(EditDefaultsOnly)
+		float TrackMaxDrivingForce = 400000; // Assume 40 Tonne tank, and 1g acceleration
 	
 };
